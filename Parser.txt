@@ -1,0 +1,20 @@
+local variable : a , type: int 
+local variable : b , type: int 
+local variable : c , type: int 
+local variable : discriminant , type: int 
+local variable : root1 , type: int 
+local variable : root2 , type: int 
+local variable : realPart , type: int 
+local variable : imagPart , type: int 
+var-b var-b * const-4 var-a * var-c * - = var-discriminant
+var-discriminant const-0 != var-b var-discriminant + () const-2 var-a * () / = var-root1
+var-b var-discriminant - () const-2 var-a * () / = var-root2
+IF-COND 
+var-discriminant const-0 == var-root2 var-b const-2 var-a * () / = = var-root1
+var-b const-2 var-a * () / = var-realPart
+var-discriminant const-2 var-a * () / = var-imagPart
+ELSE-COND 
+IF-COND 
+FUNCTION-BODY END
+function-name : main , type: int 
+
