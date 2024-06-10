@@ -50,7 +50,7 @@ ID: root1
 ASSIGN : =
 OPENBRAC : (
 ID: b
-PLUS : +
+PLUS :+
 ID: discriminant
 CLOSEBRAC : )
 DIV : /
