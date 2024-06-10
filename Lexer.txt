@@ -1,0 +1,121 @@
+TYPE : int 
+ID: main
+OPENBRAC : (
+CLOSEBRAC : )
+OPENBRAC : {
+TYPE : int 
+ID: a
+SEMI : ;
+TYPE : int 
+ID: b
+SEMI : ;
+TYPE : int 
+ID: c
+SEMI : ;
+TYPE : int 
+ID: discriminant
+SEMI : ;
+TYPE : int 
+ID: root1
+SEMI : ;
+TYPE : int 
+ID: root2
+SEMI : ;
+TYPE : int 
+ID: realPart
+SEMI : ;
+TYPE : int 
+ID: imagPart
+SEMI : ;
+ID: discriminant
+ASSIGN : =
+ID: b
+MUL : *
+ID: b
+SUB : -
+NUM : 4
+MUL : *
+ID: a
+MUL : *
+ID: c
+SEMI : ;
+CONTROL : if
+OPENBRAC : (
+ID: discriminant
+NOTEQUAL : !=
+NUM : 0
+CLOSEBRAC : )
+OPENBRAC : {
+ID: root1
+ASSIGN : =
+OPENBRAC : (
+ID: b
+PLUS : +
+ID: discriminant
+CLOSEBRAC : )
+DIV : /
+OPENBRAC : (
+NUM : 2
+MUL : *
+ID: a
+CLOSEBRAC : )
+SEMI : ;
+ID: root2
+ASSIGN : =
+OPENBRAC : (
+ID: b
+SUB : -
+ID: discriminant
+CLOSEBRAC : )
+DIV : /
+OPENBRAC : (
+NUM : 2
+MUL : *
+ID: a
+CLOSEBRAC : )
+SEMI : ;
+CLOSEBRAC : }
+CONTROL : if
+OPENBRAC : (
+ID: discriminant
+EQUAL : ==
+NUM : 0
+CLOSEBRAC : )
+OPENBRAC : {
+ID: root1
+ASSIGN : =
+ID: root2
+ASSIGN : =
+ID: b
+DIV : /
+OPENBRAC : (
+NUM : 2
+MUL : *
+ID: a
+CLOSEBRAC : )
+SEMI : ;
+CLOSEBRAC : }
+CONTROL : else
+OPENBRAC : {
+ID: realPart
+ASSIGN : =
+ID: b
+DIV : /
+OPENBRAC : (
+NUM : 2
+MUL : *
+ID: a
+CLOSEBRAC : )
+SEMI : ;
+ID: imagPart
+ASSIGN : =
+ID: discriminant
+DIV : /
+OPENBRAC : (
+NUM : 2
+MUL : *
+ID: a
+CLOSEBRAC : )
+SEMI : ;
+CLOSEBRAC : }
+CLOSEBRAC : }
